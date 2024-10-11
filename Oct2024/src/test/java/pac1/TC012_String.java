@@ -9,7 +9,8 @@ public class TC012_String {
         System.out.println(str2);
         
         String str3 = "This is a beautiful day";
-        System.out.println("Core " + str3);
+        System.out.println("Core "
+        		+ "" + str3);
         
         System.out.println("Length od str3:" + str3.length());
         
@@ -17,7 +18,21 @@ public class TC012_String {
         
         System.out.println("Substring:" + str3.substring(10, 20));
         
-        System.out.println("value of "+ str1);
+        System.out.println("Value of: " + str1.valueOf(30));
+        System.out.println("Empty: " + str2.isEmpty());
+
+        System.out.println(str1.concat(str3));
+        System.out.println(str1.equals(str3));
+
+        StringBuffer str4 = new StringBuffer("apple");
+        System.out.println("String buffer: " + str4.append(str4));
+        
+        System.out.println("String buffer: " + str4.reverse());
+        
+        StringBuilder str5=new StringBuilder("orange");
+        
+        System.out.println("String Builder : " + str5.reverse());
+        
 	}
 
 }
