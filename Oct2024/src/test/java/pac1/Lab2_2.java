@@ -123,7 +123,11 @@ class CurrentAccount extends Account1 {
     public void withdraw(double amount) {
         if (getBalance() - amount >= -overdraftLimit) {
             super.withdraw(amount);
-        } else {
+            
+        } 
+        
+        else 
+        {
             System.out.println("Cannot withdraw. Overdraft limit of INR " + overdraftLimit + " exceeded.");
         }
     }
@@ -152,6 +156,7 @@ public class Lab2_2 {
         kathyCurrent.deposit(1000); 
         kathyCurrent.withdraw(3500); 
         kathyCurrent.withdraw(200); 
+        kathyCurrent.withdraw(50000); 
         kathyCurrent.withdraw(50000); 
        
         System.out.println("Smith's account balance: " + smithSavings.getBalance());

@@ -100,7 +100,7 @@ class Account
             balance -= amount;
             System.out.println(amount + " withdrawn. New balance: " + balance);
         } else if (balance - amount < MIN_BALANCE) {
-            System.out.println("Cannot withdraw. Minimum balance of INR " + MIN_BALANCE + " should be maintained.");
+            System.out.println("Cannot withdraw. Minimum balance of  " + MIN_BALANCE + " should be maintained.");
         } else {
             System.out.println("Invalid withdraw amount");
         }
