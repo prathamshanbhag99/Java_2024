@@ -7,7 +7,7 @@ public class Employee {
     private String designation;
     private String insuranceScheme;
 
-    // Constructor
+   
     public Employee(int id, String name, double salary, String designation) {
         this.id = id;
         this.name = name;
@@ -16,7 +16,7 @@ public class Employee {
         this.insuranceScheme = determineInsuranceScheme(salary, designation);
     }
 
-    // Getter and Setter methods
+    
     public int getId() {
         return id;
     }
@@ -60,7 +60,7 @@ public class Employee {
             return "Scheme A";
         } else if (salary >= 20000 && salary <= 50000 && designation.equalsIgnoreCase("Programmer")) {
             return "Scheme B";
-        } else if (salary >= 5000 && salary < 20000 && designation.equalsIgnoreCase("Clerk")) {
+        } else if (salary >= 5000 && salary < 20000 && designation.equalsIgnoreCase("Admin")) {
             return "Scheme C";
         } else {
             return "No Scheme";

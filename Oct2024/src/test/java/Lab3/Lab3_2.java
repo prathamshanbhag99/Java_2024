@@ -3,14 +3,12 @@ package Lab3;
 
 import java.util.Scanner;
 
-// Custom Exception for Age Validation
 class AgeException extends Exception {
     public AgeException(String message) {
         super(message);
     }
 }
 
-// Enum for Gender
 enum Gender {
     MALE, FEMALE;
 }
@@ -42,7 +40,7 @@ class Person1 {
     }
 }
 
-// Class for Account
+
 class Account1 {
     private long accNum;
     private double balance;
@@ -90,7 +88,7 @@ class Account1 {
     }
 }
 
-// Main class
+
 public class Lab3_2 {
 
     public static void main(String[] args) {
@@ -102,12 +100,11 @@ public class Lab3_2 {
 
             System.out.print("Enter Age: ");
             float age = sc.nextFloat();
-            sc.nextLine(); // Consume newline left-over
-
-            // Creating Person1 object
+            sc.nextLine(); 
+            
             Person1 person = new Person1(fname, age);
 
-            // Creating Account1 object
+           
             Account1 account = new Account1(1001, 2000, person);
             account.deposit(2000);
             account.withdraw(1000);
